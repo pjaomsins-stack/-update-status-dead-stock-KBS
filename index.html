@@ -358,7 +358,7 @@ const data = [
 ["บัญชี Adjust", 22, 22],
 ["ลูกหีบราง AB", 125, 0],
 ["ลูกหีบราง C", 18, 0],
-["หม้อต้ม ABC", 9, 0],
+["หม้อต้ม ABC + รีไฟน์", 13, 4],
 ["รถตัดอ้อย-รถไถ", 112, 3],
 ["หม้อปั่น ABC", 40, 0],
 ["หม้อเคี่ยว ABC", 2, 0],
@@ -366,10 +366,8 @@ const data = [
 ["เครื่องกล block 2", 3, 3],
 ["ระบบน้ำ", 1, 1],
 ["ซ่อมบำรุงไฟฟ้า", 102, 2],
-["เครื่องมือควบคุม", 62, 2],
-["เตรื่องมือวัด", 1, 1],
+["เครื่องมือวัด + เครื่องมือควบคุม", 63, 3],
 ["น้ำเชื่อมรีไฟน์", 4, 1],
-["หม้อต้มรีไฟน์", 4, 4],
 ["เคี่ยวปั่นรีไฟน์", 37, 0],
 ["Silo", 5, 5],
 ["บรรจุ", 194, 0],
@@ -393,7 +391,7 @@ const deptsWithMissing = data.filter(d=>d.missing>0).length;
 document.getElementById('statRow').innerHTML = `
   <div class="stat">
     <div class="k mono">${grandTotal.toLocaleString()}</div>
-    <div class="lbl">Item ทั้งหมด (25 แผนก/หมวด)</div>
+    <div class="lbl">Item ทั้งหมด (23 แผนก/หมวด)</div>
   </div>
   <div class="stat warn">
     <div class="k mono">${grandMissing.toLocaleString()}</div>
